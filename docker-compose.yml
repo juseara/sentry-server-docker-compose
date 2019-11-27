@@ -1,4 +1,6 @@
 version: '3'
+
+
 services:
   # OPTIONAL: If you want to get emails from sentry include this docker container
   sentry-base:
@@ -12,7 +14,7 @@ services:
       - sentry-redis
       - sentry-postgres
     ports:
-      - 880:9000
+      - 9000:9000
     env_file:
       - sentry.env
     volumes:
